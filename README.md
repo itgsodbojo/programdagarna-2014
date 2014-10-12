@@ -12,6 +12,15 @@ Jag har inte träffat er, vet inte förutsättningarna för installationen av li
 kanske wmwareplayer och någon iso. vi löser det. Annars kör vi min favorit virtualbox och vagrant.
 Så får vi se hur vi sätter upp ett nätverk.
 
+###ssh###
+
+För att koppla upp er mot en linuxserver är det korrekta sättet att använda
+[ssh](http://en.wikipedia.org/wiki/Secure_Shell). Windows saknar en ssh client
+den enklaste och snabbaste vägen till ssh på windows är [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+ip-adress och port beror på hur vi virtualiserar linux.
+Återkommer med det under lektionen.
+
+
 ###Keyboard
 
 Det finns ett par tangentkombinatationer som ni kan behöva kunna
