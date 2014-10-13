@@ -26,7 +26,7 @@ hämta hem den och lägg till den.
 
 1.Öppna ett kommandofönster, cmd.exe, skriv in
 
-    vagrant add box ubuntu/trusty32
+    vagrant box add ubuntu/trusty32
 
 Nu laddas en virtuell image hem.
 
