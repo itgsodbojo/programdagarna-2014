@@ -24,8 +24,9 @@ Vagrant är ett progam som används för att skapa och hantera virtuella maskine
 Det först ni måste göra är att ladda hem en virtuell image, vi ska använda ubuntu 14.04 server,
 hämta hem den och lägg till den.
 
-  1. Öppna ett kommandofönster, cmd.exe
-  2. skriv in  vagrant add box ubuntu/trusty32
+1.Öppna ett kommandofönster, cmd.exe, skriv in
+
+    vagrant add box ubuntu/trusty32
 
 Nu laddas en virtuell image hem.
 
@@ -37,7 +38,7 @@ skapa eran virtuella maskin, ex
 
 När eran box har laddat ner kan ni initiera den med
 
-  vagrant init ubuntu/trusty32
+    vagrant init ubuntu/trusty32
 
 Därefter kan ni starta den med
 
