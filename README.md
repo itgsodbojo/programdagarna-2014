@@ -8,17 +8,63 @@ it-tekniker, nätverkstekniker, devops och andra hackers
 Dagens uppgift är att lära sig tillräckligt mycket linux för att kunna skapa en filserver i linux
 som delar filer med andra datorer via cifs, som mest används i windowsvärlden.
 
-Jag har inte träffat er, vet inte förutsättningarna för installationen av linux,
-kanske wmwareplayer och någon iso. vi löser det. Annars kör vi min favorit virtualbox och vagrant.
-Så får vi se hur vi sätter upp ett nätverk.
+## vagrant/virtualbox##
 
-###ssh###
+Vi ska använda vagrant/virtulabox för att installera en virtuell linuxserver.
 
-För att koppla upp er mot en linuxserver är det korrekta sättet att använda
-[ssh](http://en.wikipedia.org/wiki/Secure_Shell). Windows saknar en ssh client
-den enklaste och snabbaste vägen till ssh på windows är [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
-ip-adress och port beror på hur vi virtualiserar linux.
-Återkommer med det under lektionen.
+Börja med att installera virtualbox för windowshost  och vagrant
+
+  - [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+  - [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
+
+
+###Vagrant###
+
+Vagrant är ett progam som används för att skapa och hantera virtuella maskiner.
+Det först ni måste göra är att ladda hem en virtuell image, vi ska använda ubuntu 14.04 server,
+hämta hem den och lägg till den.
+
+  1. Öppna ett kommandofönster, cmd.exe
+  2. skriv in  vagrant add box ubuntu/trusty32
+
+Nu laddas en virtuell image hem.
+
+Under tiden kan ni i ett annat kommando fönster, skapa en katalog där ni vill
+skapa eran virtuella maskin, ex
+
+    mkdir programdagarna2104
+
+
+När eran box har laddat ner kan ni initiera den med
+
+  vagrant init ubuntu/trusty32
+
+Därefter kan ni starta den med
+
+    vagrant up
+
+Nu har ni en virtuell maskin, ni behöver logga in på den, det gör man med ssh
+i windows finns ingen inbyggd ssh client, ladda hem [putty.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+
+För att logga in behöver ni veta ip-adress,port och användarnamn, ni hittar dom genom
+att försöka använda vagrant
+
+    vagrant ssh
+
+och läs ip och port, användarnamn och lösenord är vagrant.
+
+- start putty och fyll i ip och port, logga in
+
+*Klart.*
+
+nu forsätter vi med att lära oss linux.
+
+
+
+
+
+
+
 
 
 ###Keyboard
